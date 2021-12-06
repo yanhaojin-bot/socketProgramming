@@ -1,5 +1,4 @@
 // Server side C/C++ program to demonstrate Socket programming
-// ID: 2266578592
 // TCP Port with client A: 25592
 // TCP Port with client B: 26592
 

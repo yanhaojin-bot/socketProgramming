@@ -1,30 +1,9 @@
-
-#include <iostream>
-#include <fstream>
-#include <string>
-#include <iomanip>
-#include <sstream>
 #include <bits/stdc++.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <errno.h>
-#include <string.h>
-#include <netdb.h>
-#include <sys/types.h>
-#include <netinet/in.h>
-#include <sys/socket.h>
-#include <arpa/inet.h>
-#include <sys/wait.h>
-#include <vector>
 #include "util.cpp"
-#define A_PORT 25592
-#define B_PORT 26592
-#define T_PORT 21592
-#define S_PORT 22592
 #define P_PORT 23592
 #define C_PORT 24592
 #define HOSTNAME "127.0.0.1"
+
 using namespace std;
 
 unordered_map<string, list<string> > adjacencyList;
