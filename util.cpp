@@ -49,8 +49,9 @@ void receiveTopoInfo(udp_socket_class &server, unordered_map<string, list<string
     }
 }
 
-void receiveScoresInfo(udp_socket_class &server, unordered_map<string, int> &scores)
+void receiveScoresInfo(udp_socket_class &server, unordered_map<string, int> &scores, unordered_map<string, int> name2Index)
 {
+    int i = 0;
     server.recvData();
     while (server.recvString != "end")
     {
@@ -68,6 +69,8 @@ void receiveScoresInfo(udp_socket_class &server, unordered_map<string, int> &sco
         }
 
         int score = stoi(scoreStr, nullptr, 10);
+        name2Index[name] = i;
+        i++;
         scores[name] = score;
         server.recvData();
     }
